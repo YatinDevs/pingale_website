@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Briefcase, ArrowRight, ChevronsRight, BarChart2 } from "lucide-react";
+import { PingaleLogo } from "../assets";
 
 const SujiLogo = () => {
   return (
@@ -14,16 +15,11 @@ const SujiLogo = () => {
         animate={{ scale: 1, opacity: 1 }}
         transition={{ delay: 0.2, duration: 0.5 }}
       >
-        <img src="" alt="Wealth Logo" className="w-16 h-16 md:w-16 md:h-16" />
-      </motion.div>
-      <motion.div
-        initial={{ x: -10, opacity: 0 }}
-        animate={{ x: 0, opacity: 1 }}
-        transition={{ delay: 0.3, duration: 0.5 }}
-      >
-        <h1 className="text-xl md:text-3xl font-bold text-gray-500 tracking-tight">
-          VNN<span className="text-blue-600">Wealth</span>
-        </h1>
+        <img
+          src={PingaleLogo}
+          alt="Pingale Logo"
+          className="w-32 h-24 md:w-56 md:h-42"
+        />
       </motion.div>
     </motion.div>
   );

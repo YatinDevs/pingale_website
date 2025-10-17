@@ -6,4 +6,14 @@ import CAGRIcon from "./calculator/cagr.png";
 import InflationIcon from "./calculator/inflation.png";
 import TaxIcon from "./calculator/tax.png";
 
-export { SIPIcon, SWPIcon, PPFIcon, FDIcon, CAGRIcon, InflationIcon, TaxIcon };
+import PingaleLogo from "./Pingale_Logo.png";
+export {
+  PingaleLogo,
+  SIPIcon,
+  SWPIcon,
+  PPFIcon,
+  FDIcon,
+  CAGRIcon,
+  InflationIcon,
+  TaxIcon,
+};

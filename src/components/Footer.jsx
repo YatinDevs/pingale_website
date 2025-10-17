@@ -9,32 +9,32 @@ import {
 } from "react-icons/fa";
 import { MdOutlineEmail, MdOutlineBusinessCenter } from "react-icons/md";
 import { IoLocationOutline, IoCallOutline } from "react-icons/io5";
-import SujiLogo from "./SujiLogo";
 import { Link } from "react-router-dom";
+import SujiLogo from "./SujiLogo";
 
 const Footer = () => {
   const socialIcons = [
     {
       icon: FaFacebookF,
       label: "Facebook",
-      url: "https://facebook.com/sujicareer",
+      url: "https://facebook.com/pingalefinancial",
     },
     {
       icon: FaTwitter,
       label: "Twitter",
-      url: "https://twitter.com/sujicareer",
+      url: "https://twitter.com/pingalefinancial",
     },
     {
       icon: FaLinkedinIn,
       label: "LinkedIn",
-      url: "https://linkedin.com/company/sujicareer",
+      url: "https://linkedin.com/company/pingalefinancial",
     },
     {
       icon: FaInstagram,
       label: "Instagram",
-      url: "https://instagram.com/sujicareer",
+      url: "https://instagram.com/pingalefinancial",
     },
-    { icon: FaWhatsapp, label: "WhatsApp", url: "https://wa.me/919970499999" },
+    { icon: FaWhatsapp, label: "WhatsApp", url: "https://wa.me/919881063639" },
   ];
 
   const navItems = [
@@ -50,17 +50,13 @@ const Footer = () => {
     {
       label: "SERVICES",
       submenu: [
-        { label: "Company Placements", path: "/services/company-placements" },
-        { label: "Banking Placements", path: "/services/banking-placements" },
-        { label: "Finance Placements", path: "/services/finance-placements" },
-        { label: "IT Placements", path: "/services/it-placements" },
-        { label: "Govt Contract Jobs", path: "/services/govtcontract-jobs" },
-        { label: "Part Time Jobs", path: "/services/parttime-jobs" },
+        { label: "Financial Planning", path: "/services/financial-planning" },
+        { label: "Investment Advisory", path: "/services/investment-advisory" },
+        { label: "Wealth Management", path: "/services/wealth-management" },
+        { label: "Tax Planning", path: "/services/tax-planning" },
+        { label: "Retirement Planning", path: "/services/retirement-planning" },
+        { label: "Insurance Solutions", path: "/services/insurance-solutions" },
       ],
-    },
-    {
-      label: "TRAINING",
-      path: "/training-programs",
     },
     { label: "CONTACT", path: "/contactus" },
   ];
@@ -69,7 +65,7 @@ const Footer = () => {
     { label: "About Us", path: "/about#us" },
     { label: "Training", path: "/training-programs" },
     { label: "Our Mission", path: "/about#mission" },
-    { label: "SERVICES", path: "/services/company-placements" },
+    { label: "SERVICES", path: "/services/financial-planning" },
     { label: "Success Stories", path: "/about#team" },
   ];
 
@@ -91,9 +87,10 @@ const Footer = () => {
             <SujiLogo />
           </div>
           <p className="text-gray-300 mb-6">
-            Suji Training and Placement Service is a leading placement agency
-            providing job opportunities in banking, finance, and IT sectors with
-            top companies across India.
+            Pingale Financial Services is a premier financial advisory firm
+            providing comprehensive financial planning, investment advisory,
+            wealth management, and tax planning services to help clients achieve
+            their financial goals.
           </p>
           <div className="flex gap-4">
             {socialIcons.map(({ icon: Icon, label, url }, index) => (
@@ -185,29 +182,35 @@ const Footer = () => {
                 size={20}
                 className="text-blue-400 mt-1 flex-shrink-0"
               />
-              <span>
-                B.G. 02, Near Janta Hotel,Ground Floor, Thakkar Bazar,New
-                CBS,Nashik Maharashtra - 422002
-              </span>
+              <span>3/4,GuruKrupa Sankul , PingaleGoan Baswant</span>
             </li>
             <li className="flex items-center gap-3">
               <MdOutlineEmail size={20} className="text-blue-400" />
               <a
-                href="mailto:info@sujicareer.com"
+                href="mailto:info@pingalefinancial.com"
                 className="hover:text-white transition-colors"
               >
-                info@sujicareer.com
+                bhauraopingle71@gmail.com
               </a>
             </li>
             <li className="flex items-center gap-3">
               <IoCallOutline size={20} className="text-blue-400" />
               <a
+                href="tel:+919881063639"
+                className="hover:text-white transition-colors"
+              >
+                +91 98810 63639
+              </a>
+            </li>
+            {/* <li className="flex items-center gap-3">
+              <IoCallOutline size={20} className="text-blue-400" />
+              <a
                 href="tel:+917020295747"
                 className="hover:text-white transition-colors"
               >
-                +91 7020295747
+                +91 70202 95747
               </a>
-            </li>
+            </li> */}
             <li className="flex items-center gap-3">
               <MdOutlineBusinessCenter size={20} className="text-blue-400" />
               <span>Mon-Sat: 9:00 AM - 6:00 PM</span>
@@ -221,7 +224,7 @@ const Footer = () => {
         <p>
           © {new Date().getFullYear()}{" "}
           <span className="font-semibold text-white">
-            Suji Training and Placement Service
+            Pingale Financial Services
           </span>
           . All Rights Reserved.{" "}
           <Link to="/privacy-policy" className="text-blue-400 hover:underline">

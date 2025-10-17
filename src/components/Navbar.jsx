@@ -16,14 +16,7 @@ const navItems = [
   },
   {
     label: "SERVICES",
-    submenu: [
-      { label: "Company Placements", path: "/services/company-placements" },
-      { label: "Banking Placements", path: "/services/banking-placements" },
-      { label: "Finance Placements", path: "/services/finance-placements" },
-      { label: "IT Placements", path: "/services/it-placements" },
-      { label: "Govt Contract Jobs", path: "/services/govtcontract-jobs" },
-      { label: "Part Time", path: "/services/parttime-jobs" },
-    ],
+    submenu: [],
   },
   {
     label: "CALCULATORS",
